@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/header-background-dull.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -66,14 +66,14 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #fff;
    margin: 0 auto;
    width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #fff;
+   color: #a1a1a1;
 }
 header .banner-text hr {
    width: 60%;
@@ -179,7 +179,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #A8A8A8; }
 
 
 /* ------------------------------------------------------------------ */
@@ -325,6 +325,17 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
+
+.artificialIntelligence {
+  	width: 85%;
+  	-moz-animation: artificialIntelligence 2s ease;
+  	-webkit-animation: artificialIntelligence 2s ease;
+}
+.research {
+  	width: 70%;
+  	-moz-animation: research 2s ease;
+  	-webkit-animation: research 2s ease;
+}
 .python {
   	width: 90%;
   	-moz-animation: python 2s ease;
@@ -336,11 +347,19 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: databases 2s ease;
 }
 .git {
-  	width: 70%;
+  	width: 65%;
   	-moz-animation: git 2s ease;
   	-webkit-animation: git 2s ease;
 }
 
+@-moz-keyframes artificialIntelligence {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+@-moz-keyframes research {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
 @-moz-keyframes python {
   0%   { width: 0px;  }
   100% { width: 90%;  }
@@ -351,9 +370,17 @@ ul#nav li.current a { color: #F06000; }
 }
 @-moz-keyframes git {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 65%;  }
 }
 
+@-webkit-keyframes artificialIntelligence {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+@-webkit-keyframes research {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
 @-webkit-keyframes python {
   0%   { width: 0px;  }
   100% { width: 90%;  }
@@ -364,7 +391,7 @@ ul#nav li.current a { color: #F06000; }
 }
 @-webkit-keyframes git {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 65%;  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -932,7 +959,7 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #A8A8A8;
 }
 
 footer .social-links li:first-child { margin-left: 0; }
