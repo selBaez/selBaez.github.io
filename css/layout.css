@@ -331,6 +331,16 @@ ul#nav li.current a { color: #A8A8A8; }
   	-moz-animation: artificialIntelligence 2s ease;
   	-webkit-animation: artificialIntelligence 2s ease;
 }
+.knowledgeRepresentation {
+  	width: 75%;
+  	-moz-animation: knowledgeRepresentation 2s ease;
+  	-webkit-animation: knowledgeRepresentation 2s ease;
+}
+.naturalLanguageProcessing {
+  	width: 70%;
+  	-moz-animation: naturalLanguageProcessing 2s ease;
+  	-webkit-animation: naturalLanguageProcessing 2s ease;
+}
 .research {
   	width: 70%;
   	-moz-animation: research 2s ease;
@@ -356,6 +366,14 @@ ul#nav li.current a { color: #A8A8A8; }
   0%   { width: 0px;  }
   100% { width: 85%;  }
 }
+@-moz-keyframes knowledgeRepresentation {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
+}
+@-moz-keyframes naturalLanguageProcessing {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
 @-moz-keyframes research {
   0%   { width: 0px;  }
   100% { width: 70%;  }
@@ -376,6 +394,14 @@ ul#nav li.current a { color: #A8A8A8; }
 @-webkit-keyframes artificialIntelligence {
   0%   { width: 0px;  }
   100% { width: 85%;  }
+
+@-webkit-keyframes knowledgeRepresentation {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
+}
+@-webkit-keyframes naturalLanguageProcessing {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
 }
 @-webkit-keyframes research {
   0%   { width: 0px;  }
@@ -563,6 +589,30 @@ ul#nav li.current a { color: #A8A8A8; }
 /* content fadeout */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
    opacity: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Visitor's map Section
+/* ------------------------------------------------------------------ */
+
+#visitors-map {
+   background: #fff;
+   padding-top: 66px;
+   padding-bottom: 48px;
+}
+#visitors-map h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+#visitors-map h1 span {
+   border-bottom: 3px solid #11ABB0;
+}
+
+#visitors-map h5 {
+   font: 28px/36px 'opensans-bold', sans-serif;
+   color: #636363;
+   font-size: 17px;
 }
 
 /* ------------------------------------------------------------------ */
