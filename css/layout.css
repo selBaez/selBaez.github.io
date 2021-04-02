@@ -22,7 +22,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: #0f0f0f; }  /* this is the default background
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -392,8 +392,13 @@ ul#nav li.current a { color: #A8A8A8; }
 }
 
 @-webkit-keyframes artificialIntelligence {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 85%;
+    }
+}
 
 @-webkit-keyframes knowledgeRepresentation {
   0%   { width: 0px;  }
@@ -589,30 +594,6 @@ ul#nav li.current a { color: #A8A8A8; }
 /* content fadeout */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
    opacity: 0;
-}
-
-/* ------------------------------------------------------------------ */
-/* f. Visitor's map Section
-/* ------------------------------------------------------------------ */
-
-#visitors-map {
-   background: #fff;
-   padding-top: 66px;
-   padding-bottom: 48px;
-}
-#visitors-map h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-}
-#visitors-map h1 span {
-   border-bottom: 3px solid #11ABB0;
-}
-
-#visitors-map h5 {
-   font: 28px/36px 'opensans-bold', sans-serif;
-   color: #636363;
-   font-size: 17px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -957,6 +938,30 @@ call-to-action .button {
    border: none;
 }
 
+
+/* ------------------------------------------------------------------ */
+/* f. Visitor's map Section
+/* ------------------------------------------------------------------ */
+
+#visitors-map {
+   background: #636363;
+   padding-top: 66px;
+   padding-bottom: 48px;
+}
+#visitors-map h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+#visitors-map h1 span {
+   border-bottom: 3px solid #11ABB0;
+}
+
+#visitors-map h5 {
+   font: 28px/36px 'opensans-bold', sans-serif;
+   color: #636363;
+   font-size: 17px;
+}
 
 /* ------------------------------------------------------------------ */
 /* i. Footer
