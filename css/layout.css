@@ -31,9 +31,9 @@ body { background: #0f0f0f; }  /* this is the default background
 header {
    position: relative;
    height: 800px;
-   min-height: 500px;
+   min-height: 100px;
    width: 100%;
-   background: #161415 url(../images/header-background-dull.jpg) no-repeat top center;
+   background: #161415 url(../images/robot-white-on-pink.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -74,8 +74,8 @@ header .banner-text h3 {
 header .banner-text h3 span,
 header .banner-text h3 a {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #8edde1; /* #a1a1a1;*/
-   text-decoration: underline #2F2D2E;
+   color: #000000; /* #a1a1a1;*/
+   /*text-decoration: underline #2F2D2E;*/
 }
 header .banner-text hr {
    width: 60%;
