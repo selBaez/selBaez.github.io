@@ -1,0 +1,118 @@
+/*----------------------------------------------*/
+/*	Shared "secondary page" header
+/*	(used by experience.html and publications.html,
+/*	which don't have the big pink hero header)
+/*----------------------------------------------*/
+
+.page-header {
+   background: #ebeeee;
+   padding-top: 130px;
+   padding-bottom: 24px;
+   text-align: center;
+}
+.page-header h1 {
+   font: 38px/1.2em 'opensans-bold', sans-serif;
+   color: #313131;
+   margin-bottom: 12px;
+}
+.page-header p {
+   max-width: 640px;
+   margin: 0 auto;
+   font-size: 16px;
+   line-height: 26px;
+   color: #6E7881;
+}
+
+@media screen and (max-width: 767px) {
+   .page-header { padding-top: 110px; }
+   .page-header h1 { font-size: 30px; }
+}
+
+/*----------------------------------------------*/
+/*	Publications page
+/*----------------------------------------------*/
+
+#pubs-mosaic {
+   background: #ebeeee;
+   padding-bottom: 60px;
+}
+
+/* Category tabs - jump links so topics don't require scrolling to find */
+.pub-tabs {
+   position: sticky;
+   top: 48px;
+   z-index: 90;
+   background: #ebeeee;
+   list-style: none;
+   margin: 0;
+   padding: 18px 0 24px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+}
+.pub-tabs a {
+   display: inline-block;
+   padding: 9px 18px;
+   border-radius: 20px;
+   color: #fff;
+   font: 12px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-decoration: none;
+}
+.pub-tabs .tab-agents a { background: var(--dialogue); }
+.pub-tabs .tab-kg a { background: var(--prompt); }
+.pub-tabs .tab-health a { background: var(--query); }
+.pub-tabs .tab-early a { background: var(--orange); }
+
+#pubs-list {
+   background: #ebeeee;
+   padding: 30px 0 90px 0;
+}
+#pubs-list h2 {
+   font: 15px/24px 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 10px 0 10px 16px;
+   margin: 48px 0 18px 0;
+   border-left: 4px solid #95A3A3;
+   scroll-margin-top: 110px;
+}
+#pubs-list h2:first-of-type { margin-top: 0; }
+#pubs-list h2.topic-agents { border-color: var(--dialogue); color: var(--dialogue); }
+#pubs-list h2.topic-kg { border-color: var(--prompt); color: var(--prompt); }
+#pubs-list h2.topic-health { border-color: var(--query); color: var(--query); }
+#pubs-list h2.topic-early { border-color: var(--orange); color: var(--orange); }
+
+.pub-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.pub-list li {
+   padding: 10px 0;
+   border-bottom: 1px solid #dadfdf;
+   line-height: 22px;
+   color: #313131;
+}
+.pub-list li:last-child { border-bottom: none; }
+.pub-year {
+   display: inline-block;
+   min-width: 42px;
+   font-weight: bold;
+   color: #95A3A3;
+   margin-right: 6px;
+}
+.pub-venue {
+   display: block;
+   font-size: 13px;
+   color: #95A3A3;
+   margin-top: 2px;
+   margin-left: 48px;
+}
+
+@media screen and (max-width: 767px) {
+   .pub-tabs { position: static; }
+   .pub-venue { margin-left: 0; }
+}
