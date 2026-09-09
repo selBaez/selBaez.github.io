@@ -34,7 +34,40 @@
 
 #pubs-mosaic {
    background: #ebeeee;
-   padding-bottom: 60px;
+   padding-bottom: 40px;
+}
+
+/* Dense, uniform preview grid - no single tile should stand out */
+#pubs-mosaic #portfolio-wrapper .columns {
+   padding: 0 6px;
+   margin-bottom: 12px;
+}
+#pubs-mosaic .portfolio-item .item-wrap img {
+   display: block;
+   width: 100%;
+   height: 110px;
+   object-fit: cover;
+}
+#pubs-mosaic .portfolio-item .portfolio-item-meta { padding: 8px; }
+#pubs-mosaic .portfolio-item .portfolio-item-meta h5 {
+   font-size: 10px;
+   line-height: 14px;
+}
+#pubs-mosaic .portfolio-item .portfolio-item-meta p {
+   font-size: 9px;
+   line-height: 12px;
+}
+#pubs-mosaic .portfolio-item .link-icon {
+   width: 20px;
+   height: 20px;
+   font-size: 11px;
+   line-height: 20px;
+   margin-left: -10px;
+   margin-top: -10px;
+}
+
+@media screen and (max-width: 900px) {
+   #pubs-mosaic .portfolio-item .item-wrap img { height: 90px; }
 }
 
 /* Category tabs - jump links so topics don't require scrolling to find */
@@ -64,7 +97,7 @@
 .pub-tabs .tab-agents a { background: var(--dialogue); }
 .pub-tabs .tab-kg a { background: var(--prompt); }
 .pub-tabs .tab-health a { background: var(--query); }
-.pub-tabs .tab-early a { background: var(--orange); }
+.pub-tabs .tab-early a { background: var(--speakers); }
 
 #pubs-list {
    background: #ebeeee;
@@ -83,7 +116,7 @@
 #pubs-list h2.topic-agents { border-color: var(--dialogue); color: var(--dialogue); }
 #pubs-list h2.topic-kg { border-color: var(--prompt); color: var(--prompt); }
 #pubs-list h2.topic-health { border-color: var(--query); color: var(--query); }
-#pubs-list h2.topic-early { border-color: var(--orange); color: var(--orange); }
+#pubs-list h2.topic-early { border-color: var(--speakers); color: var(--speakers); }
 
 .pub-list {
    list-style: none;
